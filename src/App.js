@@ -7,10 +7,7 @@ const App = () => {
   return (
     <>
       <h1>Lightbulb Challenge</h1>
-      <LightSwitch />
-      <LightSwitch />
-      <LightSwitch />
-      <LightSwitch />
+      <LightSwitch /> 
     </>
   )
 }
