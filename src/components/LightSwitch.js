@@ -26,7 +26,7 @@ const LightSwitch = () => {
     <>
       <div>
       <img src={lightSwitchStatus === "off" ? switchOff : switchOn} onClick={onOff}/>
-      <img src={lightSwitchStatus === "off" ? lightOff : lightOn} />
+      <img src={lightSwitchStatus === "off" ? lightOff : lightOn} /> 
       </div>
     </>
   )
