@@ -1,9 +1,24 @@
-import React from "react"
+import React, {useState} from "react"
 
-const LightSwitch = () => {
+const LightSwitch = (props) => {
+
+  const [lightSwitchStatus, setLightSwitchStatus] = useState("off")
+
+  const [colorStatus, setColorStatus] = useState("white")
+
+  const onOff = () => {
+    if (lightSwitchStatus === "off") {
+      setLightSwitchStatus("on")
+      setColorStatus("yellow")
+    } else {
+      setLightSwitchStatus("off")
+      setColorStatus("white")
+    }
+  }
+
   return (
     <>
-      <div className="lightbulb"></div>
+      <div className="lightbulb" onClick={onOff} style={{backgroundColor: colorStatus}}>{lightSwitchStatus}</div>
     </>
   )
 }
